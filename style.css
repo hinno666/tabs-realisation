@@ -56,8 +56,12 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: none;
+    /* display: none; */
     position: relative;
+    transition: 0.3s;
+    transform: translate(-30px);
+    opacity: 0;
+    height: 0;
 }
 
 .steps__tab-content::before {
@@ -70,5 +74,8 @@ body {
 }
 
 .steps__tab-content.active {
-    display: block;
+    /* display: block; */
+    transform: translate(30px);
+    opacity: 1;
+    height: auto;
 }
